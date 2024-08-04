@@ -22,17 +22,14 @@ body{
 
 /* css for header */
     /* élément d'arrière plan menu navigation */
-#backHeader{
-    /* height: 90px; */
-    height: 70px;
-    /* display: none; */
-}
+    #backHeader{
+        height: 70px;
+    }
 .header-container{
     background-color: beige;
     display: grid;
     width: 100%;
     grid-template-rows: 100%;
-    /* height: 90px; */
     height: 70px;
     box-shadow: 0px 8px 8px -6px #684e3fc4;
     z-index: 99;
@@ -44,9 +41,7 @@ body{
         grid-gap: 10px;
         grid-template-columns: 90px 270px;
         justify-items: center;
-        /* width: 767px; */
         height: 100%;
-        /* margin: 0 auto; */
     }
     .header-item a{
         color: #809340;
@@ -75,9 +70,6 @@ body{
         border-left: 1px solid darkgreen;
         border-right: 1px solid darkgreen;
     }
-    /* .header-item:nth-child(3){
-        border-right: 1px solid darkgreen;
-    } */
         .header-item{
             text-shadow: 1px 1px white;
             padding: auto 10px;
@@ -104,7 +96,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 40px;
-    /* background-color: white; */
     background-color: #fef7ee;
     padding-top: 40px;
 }
@@ -115,21 +106,35 @@ body{
     box-shadow: 3px 3px grey;
 }
 
-/* .mozaique-container img:hover{
-    transform: scale(1.05);
-} */
-
 /* css for container-section */
 .container-section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* flex-direction: row; */
-    /* text-align: left; */
+    grid-template-columns: 390px;
+    justify-content: center;
     background-color: #fef7ee;
     padding-top: 20px;
     padding-bottom: 40px;
     margin : 20px;
 }
+/* css tableau */
+th{
+    font-size: larger;
+    text-align: center;
+    padding: 19px;
+}
+tr{
+    vertical-align: top;
+}
+td{
+    padding: 12px;
+}
+td:nth-child(1) {
+    font-weight: bold;  
+  }
+td:nth-child(2) {
+    text-align: left;
+  }
+/* LIMITE */
     .titre-section, .day{
         text-align: center;
     }
@@ -137,25 +142,18 @@ body{
     .container-horaire, .container-tarif{
         display: grid;
         align-content: center;
+        justify-items: center;
     }
-    .item-horaire, .item-tarif{
-        /* background-color: #fef7ee; */
+    .container-tarif{
+        padding-top: 20px;
+    }
+    .item-tarif{
         padding: 10px 30px;
     }
-        .day{
+        .prix{
             font-weight: bold;
-            font-size: larger;
+            padding-right: 20px;
         }
-            /* .praticeByDay{
-                background-color: #fef7ee;
-                padding-left: 0;
-                padding-right: 0;
-            } */
-                .heure, .prix{
-                    font-weight: bold;
-                    padding-right: 20px;
-                }
-    
 
 /* css for aPropos.html */
 .aPropos{
@@ -261,7 +259,6 @@ body{
     }
     .buttonMap {
         font-size: 12px;
-        /* padding: 10px 20px; */
         cursor: pointer;
     }
     .buttonMap:hover{

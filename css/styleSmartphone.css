@@ -21,9 +21,7 @@
 /* css for header */
     /* élément d'arrière plan menu navigation */
     #backHeader{
-        /* height: 90px; */
         height: 70px;
-        /* display: none; */
     }
     .header-container{
         background-color: beige;
@@ -41,9 +39,7 @@
         grid-gap: 10px;
         grid-template-columns: 90px 270px;
         justify-items: center;
-        /* width: 767px; */
         height: 100%;
-        /* margin: 0 auto; */
     }
     .header-item a{
         color: #809340;
@@ -72,9 +68,6 @@
         border-left: 1px solid darkgreen;
         border-right: 1px solid darkgreen;
     }
-    /* .header-item:nth-child(3){
-        border-right: 1px solid darkgreen;
-    } */
         .header-item{
             text-shadow: 1px 1px white;
             padding: auto 10px;
@@ -130,7 +123,6 @@
             row-gap: 20px; */
         }
         .item-horaire{
-            /* background-color: #cec483; */
             border-radius: 30px 0 30px 0;
             padding: 10px 30px;
         }
