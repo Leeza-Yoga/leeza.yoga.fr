@@ -14,7 +14,7 @@
         #container{
             display : grid;
             grid-template-columns: 100%;
-            align-items: center;
+            align-items: stretch;
             justify-content: center;           
         }
 
@@ -142,6 +142,7 @@
         flex-direction: column;
         font-family: serif;
     }
+    
         .aPropos-container{
             display: flex;
             flex-direction: column;
@@ -152,15 +153,17 @@
         }   
             .aPropos-item{
                 flex-basis: 50%;
-                
             }
+            
             .imageApropos{
                 background-color: black;
             }
                 .imageApropos img{
                     width: 100%;
                 }
-            
+            .textApropos h2{
+                margin-top : 40px;
+            }
             .textApropos p{
                 font-size: x-large;
                 text-shadow: 1px 1px white;
@@ -168,9 +171,6 @@
                 text-align: center;
             }
 
-        hr{
-            display: inline;
-        }
         .pratique-container{
             display: flex;
             flex-direction: column;
@@ -202,6 +202,7 @@
                         padding: 10px 20px;
                     }
                     .ctn-header h2{
+                        margin-bottom: 40px;
                         text-align: center;
                     }
                 .image-pratique-container img{
