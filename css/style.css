@@ -160,6 +160,7 @@ body{
     width: 100%;
     border-radius: 10px;
     box-shadow: 3px 3px grey;
+    border: 2px solid #d0d9b3;
 }
 
 /* css for container-section */
