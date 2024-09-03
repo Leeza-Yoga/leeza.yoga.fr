@@ -134,12 +134,12 @@ body{
             transform: scale(1.1);
         }
             
-            a img{
+            header a img{
                 border-radius: 50%;
                 border: 2px solid #d0d9b3;
                 width: 85%;
             }
-            a img:hover{
+            header a img:hover{
                 border-radius: 50%;
                 border: 2px solid darkgreen;
                 width: 85%;
