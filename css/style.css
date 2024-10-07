@@ -30,6 +30,9 @@ body{
     background-color : rgb(0, 0, 0, 0.8);
     z-index: 999;
 }
+.jumbotron h3{
+    font-family: cursive;
+}
  
 .jumbotron img{    
     max-width: 90%;
@@ -41,13 +44,13 @@ body{
 .btn-annonce{
     position :absolute ;
     border : none ;
-    border-radius : 10px;
+    border-radius : 20px;
     padding : 10px ;
     bottom: 20% ;
     left : 50%;
     transform : translateX(-50%);
     z-index : 99;
-    background-color : rgb(211, 211, 211, 70%) ;
+    background-color : rgba(41, 123, 204, 0.2) ;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -56,11 +59,11 @@ body{
 }
 
 @keyframes changeColor {
-  0%   {color: blue;}
-  25%  {color: yellow;}
+  0%   {color: rgba(243, 17, 17, 0.892);}
+  25%  {color: rgb(248, 114, 4);}
   50%  {color: pink;}
-  75%  {color: green;}
-  100% {color: red;} 
+  75%  {color: rgb(246, 25, 187);}
+  100% {color: rgb(233, 77, 207);} 
 } 
 .btn-annonce a{
     text-decoration : none ;
