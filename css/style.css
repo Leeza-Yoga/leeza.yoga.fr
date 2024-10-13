@@ -39,7 +39,7 @@ body{
     max-height: 90%;
     /* margin-top: 10vh; */
     margin : auto 0 ;
-    border-radius : 5px ;
+    border-radius : 10px ;
 }
 .btn-annonce{
     position :absolute ;
@@ -364,7 +364,8 @@ footer{
     /* position */
     color: #494040;
     background-color: beige; 
-    /* height: 139px; */
+    margin-top: 20px;
+    /* height: 120px; */
 }
     .icn-container{
         display: grid;
