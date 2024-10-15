@@ -34,14 +34,32 @@ body{
     font-family: cursive;
 }
  
-.jumbotron img{    
+.jumbotron .btn_img img{    
     max-width: 90%;
     max-height: 90%;
-    /* margin-top: 10vh; */
-    margin : auto 0 ;
+    margin-top: 10vh;
+    margin :  0 auto ;
     border-radius : 10px ;
 }
-.btn-annonce{
+.jumbotron .btn_img{    
+    width: 100%;
+    height: 100%;
+    margin : 0 auto;
+}
+.jumbotron .btn-annonce{
+    position :absolute;
+    border : none;
+    border-radius : 20px;
+    padding : 10px;
+    top: 25%;
+    left : 50%;
+    transform : translateX(-50%);
+    z-index : 99;
+    background-color : rgba(41, 123, 204, 0.4) ;
+    font-weight: bolder;
+    text-decoration: none;
+}
+/* .btn-annonce{
     position :absolute ;
     border : none ;
     border-radius : 20px;
@@ -53,7 +71,7 @@ body{
     background-color : rgba(41, 123, 204, 0.2) ;
     font-weight: bolder;
     text-decoration: none;
-}
+} */
 .btn-annonce a:hover{
     transform: scale(1.1);
 }
