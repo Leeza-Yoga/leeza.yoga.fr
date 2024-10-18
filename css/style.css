@@ -259,6 +259,19 @@ td:nth-child(2) {
             .imageApropos img{
                 width: 100%;
             }
+        /* .aPropos-item{
+            flex-basis: 50%;
+            width: 100% ;
+            height: 720px;
+            
+        }
+        .imageApropos{
+            
+        }
+            .imageApropos img{
+                width: 100%;
+                margin: auto 0;
+            } */
 
         .textApropos p{
             font-size: x-large;
