@@ -27,6 +27,7 @@
             grid-template: 1fr / 1fr;          
         }
             div.textApropos p{
+                font-size: larger;
                 padding: 20px 40px 40px 40px;
             }
     
