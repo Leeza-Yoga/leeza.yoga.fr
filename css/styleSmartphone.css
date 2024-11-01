@@ -6,6 +6,11 @@
 
     /* css for mozaique */
    
+    .mozaique-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        /* row-gap: 10px; */
+    }
 
     /* css for container-section */
     .container-section{

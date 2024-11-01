@@ -166,8 +166,8 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 40px;
     background-color: #fef7ee;
-    padding-top: 40px;
     margin-top: 70px;
+    padding: 40px 12px 0 12px;
 }
 
 .mozaique-container img{
