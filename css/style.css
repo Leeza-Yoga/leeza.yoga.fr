@@ -39,32 +39,32 @@ body{
     height: 100%;
     margin : 0 auto;
 }
-.jumbotron .btn-annonce{
+/* .jumbotron .btn-annonce{
     position :absolute;
     border : none;
     border-radius : 20px;
     padding : 10px;
-    top: 25%;
+    top: 50%;
     left : 50%;
     transform : translateX(-50%);
     z-index : 99;
     background-color : rgba(41, 123, 204, 0.4) ;
     font-weight: bolder;
     text-decoration: none;
-}
-/* .btn-annonce{
+} */
+.btn-annonce{
     position :absolute ;
     border : none ;
     border-radius : 20px;
     padding : 10px ;
-    bottom: 20% ;
+    top: 40.5%;
     left : 50%;
     transform : translateX(-50%);
     z-index : 99;
     background-color : rgba(41, 123, 204, 0.2) ;
     font-weight: bolder;
     text-decoration: none;
-} */
+}
 .btn-annonce a:hover{
     transform: scale(1.1);
 }
