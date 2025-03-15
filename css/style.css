@@ -12,7 +12,7 @@ body{
     color: #684e3fc4;
 }
 
-/* update jumbotron */
+/* update pour publicités ou annonce d'événements */
 .jumbotron{
     display : none;
     position: fixed;
@@ -39,19 +39,21 @@ body{
     height: 100%;
     margin : 0 auto;
 }
-/* .jumbotron .btn-annonce{
+
+    /* css à cacher lorsqu'il faut supprimer l'annonce de la page d'accueil*/
+.jumbotron .btn-annonce{
     position :absolute;
     border : none;
     border-radius : 20px;
     padding : 10px;
-    top: 50%;
+    top: 32%;
     left : 50%;
     transform : translateX(-50%);
     z-index : 99;
     background-color : rgba(41, 123, 204, 0.4) ;
     font-weight: bolder;
     text-decoration: none;
-} */
+}
 .btn-annonce{
     position :absolute ;
     border : none ;
