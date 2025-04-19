@@ -1,75 +1,90 @@
-html, body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-body{
+body, .container-horaire{
     background-color: #fef7ee;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #684e3fc4;
 }
+nav, footer{
+    background-color: beige;
+}
+/* .dashed{
+    border: 2px dashed green;
+} */
+nav{
+    color: #809340;
+    font-weight: bolder;
+    text-decoration: none;
+    box-shadow: 0px 8px 8px -6px #684e3fc4;
+}
+nav:hover{
+    color: darkgreen;
+}
+section.aPropos{
+    font-family: serif;
+}
+div.textApropos p{
+    font-size: large;
+}
+.logo{
+    width: 60px;
+}
+.logo img{
+    width: 100%;
+}   
+.logo{
+    border-radius: 50%;
+    border: 2px solid #d0d9b3;
+}
+.logo:hover{
+    border-radius: 50%;
+    border: 2px solid darkgreen;
+    transform: scale(1.1);
+}
+li a.nav-link{
+    color: #809340;
+    font-weight: bold;
+}
+li a.nav-link:hover{
+    color: darkgreen;
+    transform: scale(1.1);
+}
+a.nav-link.active {
+    color: darkgreen !important;
+}
 
-/* update pour publicités ou annonce d'événements */
-.jumbotron{
-    display : none;
-    position: fixed;
-    top: 0;
-    left: 0;
+.mozaique-item img{
+    border: solid 2px #d0d9b3;
+    border-radius: 10px;
+}
+/* table */
+table{
+    background-color: #fef7ee;
+}
+.container-horaire th, .container-horaire td{
+    /* color: #0d6dfc;  */
+    color: #34271fc4;
+}
+table th{
+    border-radius: 10px 10px 0 0;
+}
+
+/* css modal */
+
+.custom-modal {
     width: 100%;
     height: 100%;
-    background-color : rgb(0, 0, 0, 0.8);
-    z-index: 999;
-}
-.jumbotron h3{
-    font-family: cursive;
-}
- 
-.jumbotron .btn_img img{    
     max-width: 90%;
     max-height: 90%;
     margin-top: 10vh;
-    margin :  0 auto ;
-    border-radius : 10px ;
-}
-.jumbotron .btn_img{    
-    width: 100%;
-    height: 100%;
-    margin : 0 auto;
+    margin :  0 auto ; /* Centre horizontalement et donne une marge en haut */
+    border-radius: 10px; 
 }
 
-    /* css à cacher lorsqu'il faut supprimer l'annonce de la page d'accueil*/
-.jumbotron .btn-annonce{
-    position :absolute;
-    border : none;
-    border-radius : 20px;
-    padding : 10px;
-    top: 32%;
-    left : 50%;
-    transform : translateX(-50%);
-    z-index : 99;
-    background-color : rgba(41, 123, 204, 0.4) ;
-    font-weight: bolder;
-    text-decoration: none;
-}
-.btn-annonce{
-    position :absolute ;
-    border : none ;
-    border-radius : 20px;
-    padding : 10px ;
-    top: 40.5%;
-    left : 50%;
-    transform : translateX(-50%);
-    z-index : 99;
-    background-color : rgba(41, 123, 204, 0.2) ;
-    font-weight: bolder;
-    text-decoration: none;
-}
-.btn-annonce a:hover{
-    transform: scale(1.1);
-}
+.modal-content, .ƒmodal {
+    border-radius: 10px; /* Arrondi les bords */
+} 
+
+
 
 @keyframes changeColor {
   0%   {color: rgba(243, 17, 17, 0.892);}
@@ -94,319 +109,3 @@ body{
     color: #fff;
     cursor: pointer;
 }
-
-/* css for header */
-    
-.header-container{
-    background-color: beige;
-    display: grid;
-    width: 100%;
-    grid-template-rows: 100%;
-    height: 70px;
-    box-shadow: 0px 8px 8px -6px #684e3fc4;
-    z-index: 99;
-    position: fixed;
-    top : 0;
-}
-    #divHeader{
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 90px 270px;
-        justify-items: center;
-        height: 100%;
-    }
-    .header-item a{
-        color: #809340;
-        font-weight: bolder;
-        text-decoration: none;
-    }
-    .header-item a:hover{
-        color: darkgreen;
-    }
-    nav{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        align-content: center;
-        height: 100%;
-    }
-    #container-logo{
-        display: grid;
-        align-content: center;
-        height: 100%;
-        width: 70px;
-        margin-left: 20px;
-
-    }
-    .header-item:nth-child(2){
-        border-left: 1px solid darkgreen;
-        border-right: 1px solid darkgreen;
-    }
-        .header-item{
-            text-shadow: 1px 1px white;
-            padding: auto 10px;
-            width: 90px;
-        }
-        .header-item:hover{
-            transform: scale(1.1);
-        }
-            
-            header a img{
-                border-radius: 50%;
-                border: 2px solid #d0d9b3;
-                width: 85%;
-            }
-            header a img:hover{
-                border-radius: 50%;
-                border: 2px solid darkgreen;
-                width: 85%;
-                transform: scale(1.1);
-            }
-        
-/* css for mozaique */
-.mozaique-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 40px;
-    background-color: #fef7ee;
-    margin-top: 70px;
-    padding: 40px 12px 0 12px;
-}
-
-.mozaique-container img{
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 3px 3px grey;
-    border: 2px solid #d0d9b3;
-}
-
-/* css for container-section */
-.container-section{
-    display: grid;
-    grid-template-columns: 390px;
-    justify-content: center;
-    background-color: #fef7ee;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin : 20px;
-}
-/* css tableau */
-th{
-    font-size: larger;
-    text-align: center;
-    padding: 19px;
-}
-tr{
-    vertical-align: top;
-}
-td{
-    padding: 12px;
-}
-td:nth-child(1) {
-    font-weight: bold;  
-  }
-td:nth-child(2) {
-    text-align: left;
-  }
-/* LIMITE */
-    .titre-section, .day{
-        text-align: center;
-    }
-
-    .container-horaire, .container-tarif{
-        display: grid;
-        align-content: center;
-        justify-items: center;
-    }
-    .container-tarif{
-        padding-top: 20px;
-    }
-    .item-tarif{
-        padding: 10px 30px;
-    }
-        .prix{
-            font-weight: bold;
-            padding-right: 20px;
-        }
-
-/* css for aPropos.html */
-
-section.aPropos{
-    background-color: #fef7ee;
-    display: grid;
-    grid-template: 1fr 1fr / 1fr;
-    font-family: serif;
-    margin-top: 70px;
-}
-
-    div.aPropos-container, div.pratique-container{
-        display: grid;
-        grid-template: 1fr / 1fr 1fr;
-        /* height: 720px; */
-        justify-content: center;
-        align-items: center;
-        color: #684e3fc4;
-        
-    }   
-        .aPropos-item, .pratique-item{
-            width: 100%;
-            height: 100%;
-            
-        }
-            div.imageApropos img, div.image-pratique-container img{
-                width: 100%;
-                height: 100%;
-            }
-        div.textApropos p{
-            font-size: x-large;
-            text-shadow: 1px 1px white;
-            padding: 40px;
-            text-align: center;
-            margin: 0;
-        }
-
-        div.textApropos{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        hr{
-            display: none;
-        }
-    .pratique-container{
-        background-color: #fef7ee;
-    }          
-            .detail-pratique-container{
-                text-align: left;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-                .detail-pratique-item{
-                    padding: 0 40px 0 20px;
-                }
-                .detail-pratique-item ul{
-                    list-style-type: none;
-                }
-                    .detail-pratique-item li{
-                        border-bottom: 1px solid ;
-                        padding-bottom: 10px;
-                        text-align: justify;
-                    }
-                
-                .ctn-header h4{                    
-                    width: 80px;
-                    border-radius: 30px 0 30px 0;
-                    padding: 10px 20px;
-                }
-                .ctn-header h2{
-                    text-align: center;
-                }
-            
-            .image-pratique-container img{
-                width: 100%;
-            }
-
-/* css for section-contact */
-
-.contact-container{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-}
-    .contact-item{ 
-        height: 544px;   
-    }
-    .contact-text{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-        .contact-image img{
-            width: 100%;
-        }
-        .contact-text .contactName{
-            font-weight: 600;
-        }
-        .contact-item a{
-            text-decoration: none;
-        }
-
-    .map-container iframe{
-        width: 100%; 
-        height: 80%;  
-    }
-    .buttonMap {
-        font-size: 12px;
-        cursor: pointer;
-    }
-    .buttonMap:hover{
-        transform: scale(1.1);
-    }
-   
-
-/* OVERLAY */
-
-.overlay{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
-    z-index: 999; /* Empile au-dessus du reste du contenu */
-    text-align: center;
-}
-
-.overlay img, iframe{
-    max-width: 90%;
-    max-height: 90%;
-    margin-top: 10vh; /* Centrer verticalement */
-}
-
-.overlay .fermerImage, .fermerImage, .overlayMap .fermerMap, .fermerMap {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-}
-        
-
-/* css for footer */
-footer{
-    /* position */
-    color: #494040;
-    background-color: beige; 
-    /* height: 120px; */
-}
-    .icn-container{
-        display: grid;
-        grid-template : 70px / repeat(2, 70px);
-        justify-content: center;
-        align-items: center;
-    }
-        .icn-container a{
-            background-color: white;
-            display: grid;
-            grid-template : 100% / 100%;
-            margin: 0 auto;
-            border-radius: 50%;           
-            width : 50%;
-            height: 50%;
-        }
-        .icn-container i{
-            display: grid;
-            grid-template : 100% / 100%;
-            margin: 0 auto;
-            align-items: center;
-        }
-        footer a{
-            text-decoration: none;
-        }
