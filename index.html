@@ -15,10 +15,60 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
+  <style>
+    .gradient-orange {
+      background: linear-gradient(135deg, #ff9800, #ffc107);
+    }
+    .day-header td {
+      background-color: rgba(255,152,0,0.1) !important;
+    }
+    .table-hover tbody tr:hover {
+      background-color: rgba(255,152,0,0.15) !important;
+    }
+    .card {
+      border-radius: 15px;
+    }
+    /* Bordures personnalisées */
+    .border-end {
+      border-right: 1px solid rgba(0,0,0,0.1) !important;
+    }
+    .border-bottom {
+      border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+    }
+    /* Suppression totale des bordures externes */
+  .table {
+    border: none !important;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  /* Suppression de la bordure du dernier élément */
+  tbody tr:last-child td, .border-mercredi {
+    border-bottom: none !important;
+  }
+
+  /* Style pour div tarif */
+  .divider {
+    opacity: 0.7;
+  }
+  .card {
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .list-unstyled li {
+    transition: background-color 0.2s ease;
+  }
+  .list-unstyled li:hover {
+    background-color: rgba(212, 163, 115, 0.1);
+  }
+  </style>
 </head>
 
-<body class="position-relative">
-    
+<body>   
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered "> <!-- custom-modal modal-fullscreen -->
       <div class="modal-content" style="max-height: 90vh">
@@ -37,7 +87,7 @@
     </div>
   </div>
 
-    <!-- navigation -->
+  <!-- navigation -->
   <nav class="navbar navbar-expand-sm" id="haut">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -146,7 +196,7 @@
   <!-- tableau -->
   <section class="container-section container py-4">
     <!-- horaire -->
-    <div class="row justify-content-center">
+    <!-- <div class="row justify-content-center">
       <div class="col-12 col-md-7 col-lg-4">
         <table class="container-horaire table table-borderless">
           <div class="titre-section">
@@ -198,9 +248,117 @@
           </table>
         </table>                      
       </div>
+    </div> -->
+
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold text-uppercase" style="color: #ff9800;">
+              <i class="fas fa-calendar-alt me-2"></i>Horaires des Cours
+            </h2>
+            <p class="lead">Retrouvez nos différentes pratiques tout au long de la semaine</p>
+          </div>
+    
+          <div class="card shadow-sm border-0 overflow-hidden">
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-hover table-warning mb-0" style="border-collapse: separate; border-spacing: 0;">
+                  <thead class="gradient-orange text-white">
+                    <tr>
+                      <th class="text-center border-end" style="width: 15%;">Jour</th>
+                      <th class="text-center border-end" style="width: 20%;">Heure</th>
+                      <th class="text-start">Cours</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Lundi -->
+                    <tr class="day-header">
+                      <td class="text-center fw-bold align-middle border-end" rowspan="3">Lundi</td>
+                      <td class="text-center align-middle border-end border-bottom">11:00</td>
+                      <td class="text-start align-middle border-bottom">
+                        <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
+                        <span class="badge bg-light text-dark ms-2">Tous niveaux</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center align-middle border-end border-bottom">17:30</td>
+                      <td class="text-start align-middle border-bottom">
+                        <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
+                        <span class="badge bg-light text-dark ms-2">Tous niveaux</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center align-middle border-end">19:00</td>
+                      <td class="text-start align-middle">
+                        <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
+                        <span class="badge bg-light text-dark ms-2">Tous niveaux</span>
+                      </td>
+                    </tr>
+    
+                    <!-- Mardi -->
+                    <tr class="day-header">
+                      <td class="text-center fw-bold align-middle border-end" rowspan="4">Mardi</td>
+                      <td class="text-center align-middle border-end border-bottom">10:00</td>
+                      <td class="text-start align-middle border-bottom">
+                        <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
+                        <span class="badge bg-success-subtle text-dark ms-2">Lieux Sousceyrac</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center align-middle border-end border-bottom">12:15</td>
+                      <td class="text-start align-middle border-bottom">
+                        <i class="fas fa-moon text-info me-2"></i>Yin Yoga
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center align-middle border-end border-bottom">17:30</td>
+                      <td class="text-start align-middle border-bottom">
+                        <i class="fas fa-moon text-info me-2"></i>Yin Yoga
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center align-middle border-end">19:00</td>
+                      <td class="text-start align-middle">
+                        <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
+                        <span class="badge bg-light text-dark ms-2">Niveau avancé (2 ans+)</span>
+                      </td>
+                    </tr>
+    
+                    <!-- Mercredi -->
+                    <tr class="day-header">
+                      <td class="text-center fw-bold align-middle border-end border-mercredi" rowspan="2">Mercredi</td>
+                      <td class="text-center align-middle border-end border-bottom">17:30</td>
+                      <td class="text-start align-middle border-bottom">
+                        <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
+                        <span class="badge bg-light text-dark ms-2">Tous niveaux</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center align-middle border-end">19:00</td>
+                      <td class="text-start align-middle">
+                        <i class="fas fa-moon text-info me-2"></i>Yin Yoga
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    
+          <div class="mt-3 text-center">
+            <small class="text-muted">
+              <i class="fas fa-info-circle me-1"></i>Les cours sont soumis à inscription préalable
+            </small>
+          </div>
+        </div>
+      </div>
     </div>
+    
+    
+
     <!-- tarif -->
-    <div class="container-tarif row align-items-center justify-content-center pt-4 pb-3">
+    <!-- <div class="container-tarif row align-items-center justify-content-center pt-4 pb-3">
       <div class="titre-section">
         <h2>TARIF</h2>
       </div> 
@@ -217,10 +375,81 @@
           <p>Cours illimités :<span class="prix"> 240€</span></p>
         </div>
       </div>            
+    </div> -->
+
+    <div class="container py-5" style="background-color: #fef7ee; color: #684e3fc4;">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 text-center">
+          
+          <!-- Titre -->
+          <div class="mb-4">
+            <h2 class="fw-bold mb-3" style="color: #684e3e;">
+              <i class="fas fa-tag me-2"></i>Nos Tarifs
+            </h2>
+            <div class="divider mx-auto" style="width: 80px; height: 3px; background-color: #d4a373;"></div>
+          </div>
+          
+          <!-- Carte des tarifs -->
+          <div class="card border-0 shadow-sm p-4 mb-3" style="background-color: rgba(255,255,255,0.7); border-radius: 15px;">
+            
+            <!-- À l'unité -->
+            <div class="mb-4">
+              <h4 class="text-start fw-bold mb-3" style="color: #684e3e;">
+                <i class="fas fa-calendar-day me-2"></i>Séances ponctuelles
+              </h4>
+              <ul class="list-unstyled">
+                <li class="d-flex justify-content-between py-2 border-bottom">
+                  <span>Cours à l'unité</span>
+                  <span class="fw-bold">12€</span>
+                </li>
+                <li class="d-flex justify-content-between py-2">
+                  <span>Cours d'essai</span>
+                  <span class="fw-bold">10€</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Forfaits trimestriels -->
+            <div>
+              <h4 class="text-start fw-bold mb-3" style="color: #684e3e;">
+                <i class="fas fa-calendar-alt me-2"></i>Forfaits trimestriels
+              </h4>
+              <ul class="list-unstyled">
+                <li class="d-flex justify-content-between py-2 border-bottom">
+                  <span>1 cours/semaine</span>
+                  <span class="fw-bold">120€</span>
+                </li>
+                <li class="d-flex justify-content-between py-2 border-bottom">
+                  <span>2 cours/semaine</span>
+                  <span class="fw-bold">200€</span>
+                </li>
+                <li class="d-flex justify-content-between py-2">
+                  <span>Cours illimités</span>
+                  <span class="fw-bold">240€</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- Note -->
+            <!-- <div class="mt-4  pt-2 text-center">
+              <small>
+                <i class="fas fa-info-circle me-1"></i>Paiement en espèces, chèque ou virement
+              </small>
+            </div> -->
+          </div>
+          
+          <!-- Bouton CTA -->
+          <div class="mt-4">
+            <a href="contact.html" class="btn px-4 py-2" style="background-color: #d4a373; color: white; border-radius: 8px;" target="_blank">
+              <i class="fas fa-paper-plane me-2"></i>Nous contacter
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   
-  <div class="elfsight-app-97f33274-bf94-4c9f-bb9e-ada8a1542140" data-elfsight-app-lazy></div>
+  <div class="elfsight-app-97f33274-bf94-4c9f-bb9e-ada8a1542140 p-4" data-elfsight-app-lazy></div>
   
   <!-- flêche de retour on top -->
   <div class="container bouton-revenir-debut sticky-bottom d-flex d-lg-none justify-content-end" >
@@ -249,12 +478,12 @@
   <script src="js/bootstrap.js"></script>
 
   <!-- Ouvrir le modal automatiquement -->
-  <script>
+  <!-- <script>
     document.addEventListener("DOMContentLoaded", function() {
       var myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"));
       myModal.show();
     });
-  </script>
+  </script> -->
 </body>
 
 </html>

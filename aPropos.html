@@ -16,6 +16,62 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
+
+        <style>
+            /* Section à propos */
+            .timeline-vertical {
+                position: relative;
+                padding-left: 30px;
+            }
+            .timeline-badge {
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+            }
+            .timeline-item {
+                position: relative;
+            }
+            .timeline-item:not(:last-child)::after {
+                content: '';
+                position: absolute;
+                left: 7px;
+                top: 20px;
+                bottom: -15px;
+                width: 1px;
+                background-color: #d4a373;
+                opacity: 0.5;
+            }
+            .max-width-600 {
+                max-width: 600px;
+            }
+            .object-fit-cover {
+                object-fit: cover;
+            }
+
+            /* Les pratiques */
+            .practice-card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .practice-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            }
+            .badge {
+                font-weight: 500;
+                padding: 4px 8px;
+                margin-right: 5px;
+                font-size: 0.75rem;
+            }
+            .max-width-600 {
+                max-width: 600px;
+            }
+            .object-fit-cover {
+                object-fit: cover;
+            }
+        </style>
     </head>
 
     <body>
@@ -44,9 +100,10 @@
             </div>
         </nav>
 
-        <!-- a propos -->
+        
         <section class="aPropos container-fluid position-relative">
-            <div class="aPropos-container row">
+            <!-- a propos -->
+            <!-- <div class="aPropos-container row">
                 <div class="aPropos-item imageApropos col-12 col-sm-6 p-0">
                     <img src="img/image_09.jpg" alt="ajustement posture de yoga par leeza" title="ajustement" style="width: 100%;">
                 </div>               
@@ -54,8 +111,78 @@
                     <h2 class="h4 py-4 fw-semibold">A PROPOS DE LEEZA  :</h2>
                     <p>Leeza commence le yoga par hasard en 2011. <br>En 2020, elle décide d'aller plus loin et de se perfectionner. <br>Elle suit donc une formation de 200h en hatha vinyasa chez Sattva yoga à Toulouse. <br>Elle ne s'arrête pas là et continue de se former avec une formation de 50h en yin yoga avec Philippe Bergabel. <br>Grâce aux connaissances acquises, elle commence à enseigner en 2021 et crée son propre studio : le "Maleema studio" 1 an plus tard. <br>Sa soif de connaissance la pousse à continuer de se former en suivant des cours, des stages et d'autres formations.</p>
                 </div>
-            </div>            
-            <div class="pratique-container row">
+            </div> -->
+
+            <div class="container-fluid px-5" style="background-color: #fef7ee; color: #684e3fc4;">
+                <div class="row align-items-center g-0">
+                    <!-- Image -->
+                    <div class="col-12 col-lg-6 p-lg-5 pt-5">
+                        <img src="img/image_09.jpg" alt="Ajustement posture de yoga par Leeza" class="img-fluid w-100 object-fit-cover rounded-4"  style="min-height: 400px;">
+                    </div>
+                  
+                    <!-- Texte -->
+                    <div class="col-12 col-lg-6 p-4 p-lg-5">
+                        <div class="max-width-600 mx-auto">
+                            <h2 class="h3 mb-4 fw-bold" style="color: #684e3e;">
+                                <i class="fas fa-spa me-2"></i>À propos de Leeza
+                            </h2>
+                        
+                            <div class="timeline-vertical">
+                                <!-- 2011 -->
+                                <div class="timeline-item mb-4">
+                                    <div class="timeline-badge" style="background-color: #d4a373;"></div>
+                                    <div class="timeline-content ps-4">
+                                        <p class="mb-0 fw-semibold">2011 : Première rencontre avec le yoga</p>
+                                        <small class="text-muted">Début d'un parcours passionnant</small>
+                                    </div>
+                                </div>
+                                
+                                <!-- 2020 -->
+                                <div class="timeline-item mb-4">
+                                    <div class="timeline-badge" style="background-color: #d4a373;"></div>
+                                    <div class="timeline-content ps-4">
+                                        <p class="mb-0 fw-semibold">2020 : Formation Hatha Vinyasa 200h</p>
+                                        <small class="text-muted">Sattva Yoga à Toulouse</small>
+                                    </div>
+                                </div>
+                                
+                                <!-- Yin Yoga -->
+                                <div class="timeline-item mb-4">
+                                    <div class="timeline-badge" style="background-color: #d4a373;"></div>
+                                    <div class="timeline-content ps-4">
+                                        <p class="mb-0 fw-semibold">Formation Yin Yoga 50h</p>
+                                        <small class="text-muted">Avec Philippe Bergabel</small>
+                                    </div>
+                                </div>
+                                
+                                <!-- 2021 -->
+                                <div class="timeline-item mb-4">
+                                    <div class="timeline-badge" style="background-color: #d4a373;"></div>
+                                    <div class="timeline-content ps-4">
+                                        <p class="mb-0 fw-semibold">2021 : Début de l'enseignement</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- 2022 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-badge" style="background-color: #d4a373;"></div>
+                                    <div class="timeline-content ps-4">
+                                        <p class="mb-0 fw-semibold">2022 : Création du Maleema Studio</p>
+                                        <small class="text-muted">L'aboutissement d'un rêve</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <p class="mt-4 mb-0">
+                                <i class="fas fa-seedling me-1"></i> Sa soif de connaissance la pousse à continuer de se former à travers stages et formations complémentaires.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pratique -->
+            <!-- <div class="pratique-container row">
                 <div class="pratique-item detail-pratique-container col-12 col-sm-6 p-0 d-flex flex-column justify-content-center px-4">
                     <div class="ctn-header pb-lg-4">
                         <h2 class="h4 py-4 py-lg-4 fw-semibold">NOS PRATIQUES :</h2>
@@ -90,7 +217,74 @@
                 <div class="pratique-item image-pratique-container col-12 col-sm-6 p-0">
                     <img src="img/cascade_02_carre.jpg" alt=" posture de yoga de leeza à la montagne" title="posture en montagne" style="width: 100%;">
                 </div>
-            </div> 
+            </div>  -->
+
+            <div class="container-fluid py-5" style="background-color: #fef7ee; color: #684e3fc4;">
+                <div class="row align-items-center g-0">
+                  <!-- Texte -->
+                  <div class="col-12 col-lg-6 p-4 p-lg-5">
+                    <div class="max-width-600 mx-auto">
+                      <h2 class="h3 mb-4 fw-bold" style="color: #684e3e;">
+                        <i class="fas fa-spa me-2"></i>Nos Pratiques
+                      </h2>
+                      
+                      <!-- Vinyasa -->
+                      <div class="practice-card mb-4 p-4" style="background-color: rgba(255,255,255,0.7); border-radius: 10px; border-left: 4px solid #d4a373;">
+                        <h3 class="h5 fw-bold mb-3" style="color: #684e3e;">
+                          <i class="fas fa-water me-2"></i>Vinyasa
+                        </h3>
+                        <p class="mb-0">
+                          Le Vinyasa, c'est le yoga en mouvement! On enchaîne les postures au rythme de la respiration. Dynamique et fluide, c'est parfait pour ceux qui aiment bouger et se dépenser. Souvent pratiqué en musique.
+                        </p>
+                        <div class="mt-2">
+                          <span class="badge" style="background-color: #d4a373; color: white;">Dynamique</span>
+                          <span class="badge" style="background-color: #d4a373; color: white;">Musical</span>
+                          <span class="badge" style="background-color: #d4a373; color: white;">Énergisant</span>
+                        </div>
+                      </div>
+                      
+                      <!-- Hatha -->
+                      <div class="practice-card mb-4 p-4" style="background-color: rgba(255,255,255,0.7); border-radius: 10px; border-left: 4px solid #d4a373;">
+                        <h3 class="h5 fw-bold mb-3" style="color: #684e3e;">
+                          <i class="fas fa-sun me-2"></i>Hatha
+                        </h3>
+                        <p class="mb-0">
+                          Le Hatha yoga, c'est la base de tout ! Une pratique douce et équilibrée, où on prend le temps de bien sentir chaque posture. Idéal pour débuter et se reconnecter à son corps en douceur. Souvent pratiqué en silence sans musique.
+                        </p>
+                        <div class="mt-2">
+                          <span class="badge" style="background-color: #d4a373; color: white;">Traditionnel</span>
+                          <span class="badge" style="background-color: #d4a373; color: white;">Silencieux</span>
+                          <span class="badge" style="background-color: #d4a373; color: white;">Équilibrant</span>
+                        </div>
+                      </div>
+                      
+                      <!-- Yin -->
+                      <div class="practice-card p-4" style="background-color: rgba(255,255,255,0.7); border-radius: 10px; border-left: 4px solid #d4a373;">
+                        <h3 class="h5 fw-bold mb-3" style="color: #684e3e;">
+                          <i class="fas fa-moon me-2"></i>Yin
+                        </h3>
+                        <p class="mb-0">
+                          Le Yin Yoga, c'est la pause douceur. On maintient les postures longtemps (3 à 10 min) pour détendre en profondeur le corps et l'esprit. Idéal pour lâcher prise et se ressourcer. Souvent accompagné de musique ou instruments sonores.
+                        </p>
+                        <div class="mt-2">
+                          <span class="badge" style="background-color: #d4a373; color: white;">Doux</span>
+                          <span class="badge" style="background-color: #d4a373; color: white;">Sonore</span>
+                          <span class="badge" style="background-color: #d4a373; color: white;">Méditatif</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Image -->
+                  <div class="col-12 col-lg-6 p-lg-5 mt-4">
+                    <img src="img/cascade_02_carre.jpg" alt="Posture de yoga de Leeza à la montagne" 
+                         class="img-fluid w-100 object-fit-cover rounded-4" 
+                         style="min-height: 500px;">
+                  </div>
+                </div>
+              </div>
+              
+
             <!-- flêche de retour on top -->
             <div class="container bouton-revenir-debut sticky-bottom d-flex justify-content-end d-lg-none" >
                 <a href="#haut" class="btn-arrow btn btn-success rounded text-white p-2 shadow-lg">
