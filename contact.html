@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professeur de Yoga | Accueil - Leeza Yoga</title>
-  <meta name="description" content="Découvrez les cours de yoga de Liza, un professeur de yoga passionné et expérimenté.">
-  <meta property="og:title" content="Leeza Yoga - Professeur Yoga">
-  <meta property="og:description" content="Découvrez les cours de yoga de Liza.">
-  <meta property="og:image" content="https://leeza-yoga.github.io/leeza.yoga.fr/index.html/img/image_08.jpg">
-  <meta property="og:url" content="https://leeza-yoga.github.io/leeza.yoga.fr/index.html">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/styleSmartphone.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professeur de Yoga | Accueil - Leeza Yoga</title>
+    <meta name="description" content="Découvrez les cours de yoga de Liza, un professeur de yoga passionné et expérimenté.">
+    <meta property="og:title" content="Leeza Yoga - Professeur Yoga">
+    <meta property="og:description" content="Découvrez les cours de yoga de Liza.">
+    <meta property="og:image" content="https://leeza-yoga.github.io/leeza.yoga.fr/index.html/img/image_08.jpg">
+    <meta property="og:url" content="https://leeza-yoga.github.io/leeza.yoga.fr/index.html">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleSmartphone.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <style>
+    <style>
+      /* Laisser le footer en bas de la page */
+      html, body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+      }
+      section{
+        height: 930px;
+      }
 
-    /* Laisser le footer en bas de la page */
-    html, body{
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    body{
-      display: flex;
-      flex-direction: column;
-    }
-    section{
-      height: 930px;
-    }
+      .full-screen-img {
+            object-fit: cover; /* Ajuste l'image sans déformation */
+            height: 100vh; /* Hauteur pleine écran */
+            width: 100vw; /* Largeur pleine écran */
+      }
+    </style>
+  </head> 
 
-    .full-screen-img {
-          object-fit: cover; /* Ajuste l'image sans déformation */
-          height: 100vh; /* Hauteur pleine écran */
-          width: 100vw; /* Largeur pleine écran */
-    }
-  </style>
-
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-sm">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo_leeza_01.jpg" alt="logo" width="100%"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aPropos.html">A propos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
-          </li>
-        </ul>
+  <body>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo_leeza_01.jpg" alt="logo" width="100%"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aPropos.html">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-      
+    </nav>
+        
 
 
-  <section class="contact-container d-flex justify-content-center align-items-center">
-    <div class="contact-item contact-text">
+    <section class="contact-container d-flex justify-content-center align-items-center">
+      <div class="contact-item contact-text">
         <h3 class="">NOUS CONTACTER :</h3>
         <div id="contact-info-container">
           <p class="contactName">Leeza Yoga</p>
@@ -91,40 +89,38 @@
               Google Map                         
             </button>
         </div>
-      </div> 
-                    
+      </div>                    
     </section>
     
-  
     <!-- Modal -->
-
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Map</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <iframe class="w-100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.076800829397!2d1.8877560764482428!3d44.86073127107036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ad29936e711189%3A0x26110a69034f48e2!2sLeeza%20Yoga!5e0!3m2!1sfr!2sit!4v1722554985550!5m2!1sfr!2sit"></iframe>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Map</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe class="w-100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.076800829397!2d1.8877560764482428!3d44.86073127107036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ad29936e711189%3A0x26110a69034f48e2!2sLeeza%20Yoga!5e0!3m2!1sfr!2sit!4v1722554985550!5m2!1sfr!2sit"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
+      </div>
     </div>
 
     <!-- footer -->
     <footer class="py-4">
-        <div class="icn-container container-fluid pb-4">
-          <a class="mx-3 border bg-white rounded rounded-circle p-2" href="https://www.instagram.com/leeza_yoga?igsh=czdtYnduOTYycDQ5" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
-          <a class="mx-3 border bg-white rounded rounded-circle p-2" href="https://www.facebook.com/share/xj8E9goLGLRmNsn5/" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>        
-        </div>
-        <p class="icn-container container-fluid">
-            ® Copyright by <span><a class="email-link2 link-underline link-underline-opacity-0" href="mailto:ca.carre@gmail.com">Aguens Company</a></span> - 2024 Tous droits réservés.
-        </p>          
+      <div class="icn-container container-fluid pb-4">
+        <a class="mx-3 border bg-white rounded rounded-circle p-2" href="https://www.instagram.com/leeza_yoga?igsh=czdtYnduOTYycDQ5" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+        <a class="mx-3 border bg-white rounded rounded-circle p-2" href="https://www.facebook.com/share/xj8E9goLGLRmNsn5/" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>        
+      </div>
+      <p class="icn-container container-fluid">
+        ® Copyright by <span><a class="email-link2 link-underline link-underline-opacity-0" href="mailto:ca.carre@gmail.com">Aguens Company</a></span> - 2024 Tous droits réservés.
+      </p>          
     </footer>
+
     <!-- map script -->
     <script src="js/script.js"></script>
 
@@ -136,7 +132,6 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+  </body>
 
 </html>
