@@ -37,6 +37,18 @@
             height: 100vh; /* Hauteur pleine écran */
             width: 100vw; /* Largeur pleine écran */
       }
+
+      /* card contact */
+      .contact-info a:hover, .contact-info i:hover {
+        color: #cbda9a !important;
+        transform: scale(1.05);
+      }
+      .card {
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
     </style>
   </head> 
 
@@ -65,8 +77,8 @@
     </nav>
         
 
-
-    <section class="contact-container d-flex justify-content-center align-items-center">
+    <!-- Ancienne version section contact -->
+    <!-- <section class="contact-container d-flex justify-content-center align-items-center">
       <div class="contact-item contact-text">
         <h3 class="">NOUS CONTACTER :</h3>
         <div id="contact-info-container">
@@ -84,14 +96,99 @@
           <p><a class="link-underline link-underline-opacity-0" href="https://www.facebook.com/share/xj8E9goLGLRmNsn5/" target="_blank"><i class="fa-brands fa-square-facebook"></i> Leeza Yoga</a></p>
         </div>
 
-        <!-- Button trigger modal -->
         <div>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Google Map                         
             </button>
         </div>
       </div>                    
+    </section> -->
+
+    <section class="py-5 d-flex align-items-center" style="background-color: #fef7ee; color: #684e3fc4;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="card border-0 shadow-sm p-4 p-lg-5" style="border-radius: 15px; background-color: rgba(255,255,255,0.7);">
+              <div class="row">
+                <!-- Texte Contact -->
+                <h3 class="h4 mb-4 fw-bold text-center" style="color: #684e3e;">
+                  <i class="fas fa-paper-plane me-2"></i>Nous Contacter
+                </h3>
+                
+
+                <div class="col-12 col-md-6">
+                  
+                  <div class="contact-info ">
+                    <!-- texte -->
+                    <div class="d-flex align-items-start justify-content-center mb-3">
+                      <i class="fas fa-user me-3 my-auto" style="color: #d4a373; width: 20px;"></i>
+                      <p class="mb-0 fw-semibold">LEEZA YOGA</p>
+                    </div>
+                    
+                    <div class="d-flex align-items-start justify-content-center mb-4">
+                      <i class="fas fa-map-marker-alt me-3 my-auto" style="color: #d4a373; width: 20px;"></i>
+                      <div>
+                        <p class="mb-1" style="text-transform: uppercase;">26 Rue du Mazel</p>
+                        <p class="mb-0" style="text-transform: uppercase;">46400 Saint-Céré</p>
+                      </div>
+                    </div>
+
+                    <!-- buttons -->
+                    <a href="mailto:liza.paulmier@hotmail.fr" 
+                      class="d-flex align-items-center justify-content-center mb-3 btn btn-outline-success px-4 py-2 mx-auto" 
+                      style="width: 260px;">
+                      <i class="fas fa-envelope me-3"></i>
+                      liza.paulmier@hotmail.fr
+                    </a>
+
+                    <a href="tel:+33650611017" 
+                      class="d-flex align-items-center justify-content-center mb-3 btn btn-outline-success px-4 py-2 mx-auto"
+                      style="width: 260px;">
+                      <i class="fas fa-phone me-3 my-auto" style="width: 20px;"></i>
+                      +33 650611017
+                    </a>
+
+                    <a href="https://www.instagram.com/leeza_yoga?igsh=czdtYnduOTYycDQ5"
+                      target="_blank" 
+                      class="d-flex align-items-center justify-content-center mb-3 btn btn-outline-success px-4 py-2 mx-auto"
+                      style="width: 260px;">
+                      <i class="fab fa-instagram me-3 my-auto" style="width: 20px;"></i>
+                      @leeza_yoga
+                    </a>
+
+                    <a href="https://www.facebook.com/share/xj8E9goLGLRmNsn5/"
+                      target="_blank" 
+                      class="d-flex align-items-center justify-content-center mb-3 btn btn-outline-success px-4 py-2 mx-auto"
+                      style="width: 260px;">
+                      <i class="fab fa-facebook me-3 my-auto" style="width: 20px;"></i>
+                      Leeza Yoga
+                    </a>
+                  </div>
+                </div>
+
+                
+                <!-- Bouton Modal Google Maps -->
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center mt-4 mt-md-0">
+                  <div class="text-center">
+                    <button class="btn btn-outline-primary px-4 py-2 mb-3 mt-4" 
+                            
+                            data-bs-toggle="modal" 
+                            data-bs-target="#staticBackdrop">
+                      <i class="fas fa-map-marked-alt me-2"></i>Voir sur Google Maps
+                    </button>
+                    <p class="small text-muted">
+                      <i class="fas fa-info-circle me-1"></i>Cliquez pour voir l'emplacement du studio
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    
+    
     
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
