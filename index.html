@@ -69,21 +69,27 @@
 </head>
 
 <body> 
-  <!-- modal  qui s'affiche directement avec javascript-->
+  <!-- modal publicitaire qui s'affiche directement avec javascript-->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered "> <!-- custom-modal modal-fullscreen -->
+    <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content" style="max-height: 90vh">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Evénement:</h1>
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Important:</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
         </div>
         <div class="modal-body d-flex flex-column justify-content-center align-items-center h-100">
-          <img class="w-100 h-100 object-fit-contain" style="max-height: 70vh" src="img/annonce_2025_05_22.jpeg" alt="flyer atelier de yoga">
+          <img class="w-100 h-100 object-fit-contain" style="max-height: 70vh" src="img/information_ete.png" alt="flyer atelier de yoga">
         </div>
+        <!-- liens vers numéro -->
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-            <a type="button" class="btn btn-primary" href="contact.html">Contacter Moi</a>
+            <a type="button" class="btn btn-success" href="tel:0650611017">Contactez Moi</a>
         </div>
+        <!-- liens vers onglet contact -->
+        <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            <a type="button" class="btn btn-primary" href="contact.html">Contactez Moi</a>
+        </div> -->
       </div>
     </div>
   </div>
@@ -210,7 +216,7 @@
             <p class="lead">Retrouvez nos différentes pratiques tout au long de la semaine</p>
           </div>
     
-          <div class="card shadow-sm border-0 overflow-hidden">
+          <div class="card shadow-sm border-0 overflow-hidden mb-4">
             <div class="card-body p-0">
               <div class="table-responsive">
                 <table class="table table-hover table-warning mb-0" style="border-collapse: separate; border-spacing: 0;">
@@ -290,12 +296,14 @@
                         <i class="fas fa-moon text-info me-2"></i>Yin Yoga
                       </td>
                     </tr>
+
                   </tbody>
                 </table>
+
               </div>
             </div>
           </div>
-    
+
           <div class="mt-3 text-center">
             <small class="text-muted">
               <i class="fas fa-info-circle me-1"></i>Les cours sont soumis à inscription préalable
