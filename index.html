@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Fonts (optionnel si tu utilises Google Fonts) -->
+    <!-- Fonts (optionnel Google Fonts) -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"> -->
@@ -93,7 +93,7 @@
 
 <body> 
   <!-- modal publicitaire qui s'affiche directement avec javascript-->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content" style="max-height: 90vh">
         <div class="modal-header">
@@ -103,14 +103,14 @@
         <div class="modal-body d-flex flex-column justify-content-center align-items-center h-100">
           <img class="w-100 h-100 object-fit-contain" style="max-height: 70vh" src="img/information_ete.png" alt="flyer atelier de yoga">
         </div>
-        <!-- liens vers numéro -->
+        
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
             <a type="button" class="btn btn-success" href="tel:0650611017">Contactez Moi</a>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- navigation -->
   <nav class="navbar navbar-expand-sm" id="haut">
@@ -127,7 +127,7 @@
             <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="aPropos.html">A propos</a>
+            <a class="nav-link" href="about.html">A propos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -248,7 +248,7 @@
                   <tbody>
                     <!-- Lundi -->
                     <tr class="day-header">
-                      <td class="text-center fw-bold align-middle border-end" rowspan="3">Lundi</td>
+                      <td class="text-center fw-bold align-middle border-end" rowspan="4">Lundi</td>
                       <td class="text-center align-middle border-end border-bottom">11:00</td>
                       <td class="text-start align-middle border-bottom">
                         <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
@@ -256,6 +256,13 @@
                       </td>
                     </tr>
                     <tr>
+                      <td class="text-center align-middle border-end border-bottom">12:30</td>
+                      <td class="text-start align-middle border-bottom">
+                        <i class="fas fa-moon text-info me-2"></i>Yin Yoga
+                        <span class="badge bg-light text-dark ms-2">Tous niveaux</span>
+                      </td>
+                    </tr>
+                    <tr>
                       <td class="text-center align-middle border-end border-bottom">17:30</td>
                       <td class="text-start align-middle border-bottom">
                         <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
@@ -266,42 +273,23 @@
                       <td class="text-center align-middle border-end">19:00</td>
                       <td class="text-start align-middle">
                         <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
-                        <span class="badge bg-light text-dark ms-2">Tous niveaux</span>
+                        <span class="badge bg-warning text-dark ms-2">Niveaux avancés</span>
                       </td>
                     </tr>
     
                     <!-- Mardi -->
                     <tr class="day-header">
-                      <td class="text-center fw-bold align-middle border-end" rowspan="4">Mardi</td>
-                      <td class="text-center align-middle border-end border-bottom">10:00</td>
-                      <td class="text-start align-middle border-bottom">
-                        <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
-                        <span class="badge bg-success-subtle text-dark ms-2">Lieux Sousceyrac</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle border-end border-bottom">12:15</td>
-                      <td class="text-start align-middle border-bottom">
-                        <i class="fas fa-moon text-info me-2"></i>Yin Yoga
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle border-end border-bottom">17:30</td>
-                      <td class="text-start align-middle border-bottom">
-                        <i class="fas fa-moon text-info me-2"></i>Yin Yoga
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center align-middle border-end">19:00</td>
+                      <td class="text-center fw-bold align-middle border-end" rowspan="1">Mardi</td>
+                      <td class="text-center align-middle border-end">10:00</td>
                       <td class="text-start align-middle">
                         <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
-                        <span class="badge bg-light text-dark ms-2">Niveau avancé (2 ans+)</span>
+                        <span class="badge bg-success-subtle text-dark ms-2">Lieux Sousceyrac</span>
                       </td>
                     </tr>
     
                     <!-- Mercredi -->
                     <tr class="day-header">
-                      <td class="text-center fw-bold align-middle border-end border-mercredi" rowspan="2">Mercredi</td>
+                      <td class="text-center fw-bold align-middle border-end" rowspan="2">Mercredi</td>
                       <td class="text-center align-middle border-end border-bottom">17:30</td>
                       <td class="text-start align-middle border-bottom">
                         <i class="fas fa-sun text-warning me-2"></i>Hatha Vinyasa Yoga
@@ -312,6 +300,21 @@
                       <td class="text-center align-middle border-end">19:00</td>
                       <td class="text-start align-middle">
                         <i class="fas fa-moon text-info me-2"></i>Yin Yoga
+                      </td>
+                    </tr>
+
+                    <!-- Samedi -->
+                    <tr class="day-header">
+                      <td class="text-center fw-bold align-middle border-end border-mercredi" rowspan="2">Samedi</td>
+                      <td class="text-center align-middle border-end border-bottom">09:30</td>
+                      <td class="text-start align-middle border-bottom">
+                        <i class="bi bi-yin-yang text-dark me-2"></i>Yin Yang Yoga
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center align-middle border-end">11[[]]:00</td>
+                      <td class="text-start align-middle">
+                        <i class="bi bi-yin-yang text-dark me-2"></i>Yin Yang Yoga
                       </td>
                     </tr>
 
@@ -408,7 +411,7 @@
   
   <!-- flêche de retour on top -->
   <div class="container bouton-revenir-debut sticky-bottom d-flex justify-content-end" >
-    <a href="#haut" class="btn-arrow btn btn-outline-success rounded p-2 shadow-lg">
+    <a href="#haut" class="btn-arrow btn btn-outline-success rounded p-2 shadow-lg mb-2">
         <p class=" mb-0">
           <i class="fa-solid fa-arrow-up-long"></i>
         </p>
